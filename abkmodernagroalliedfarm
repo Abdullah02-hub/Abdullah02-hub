@@ -1,1 +1,1598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABK MODERN AGRO ALLIED FARM - abkmodernagroalliedfarm.com.ng</title>
+    <meta name="description" content="Your trusted partner for agricultural tools, machinery, and allied products. We provide high-quality agricultural solutions to boost farming productivity.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2e7d32;
+            --secondary-color: #7cb342;
+            --accent-color: #ff9800;
+            --light-color: #f5f5f5;
+            --dark-color: #333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 60px;
+            margin-right: 10px;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo h1 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin: 0;
+        }
+        
+        .logo .domain {
+            font-size: 0.8rem;
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+        
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+        
+        .auth-buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .auth-btn {
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .login-btn {
+            background-color: transparent;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+        }
+        
+        .login-btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .signup-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: 1px solid var(--primary-color);
+        }
+        
+        .signup-btn:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        
+        .user-menu {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1492496913980-501348b61469?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #f57c00;
+        }
+        
+        /* Sections */
+        section {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+        
+        /* About Section */
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+            padding-right: 2rem;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            height: 300px;
+            background-color: #ddd;
+            background: url('https://images.unsplash.com/photo-1625246333193-4c6b978a0812?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80');
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+        
+        /* Gallery Section */
+        .gallery {
+            background-color: var(--light-color);
+        }
+        
+        .gallery-categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .gallery-category {
+            padding: 0.8rem 1.5rem;
+            background-color: white;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 2px solid var(--primary-color);
+            font-weight: 500;
+        }
+        
+        .gallery-category.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .gallery-category:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .gallery-item {
+            position: relative;
+            height: 200px;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .gallery-item.selected::after {
+            content: '\2713';
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .gallery-actions {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            gap: 1rem;
+        }
+        
+        /* Products Section */
+        .products {
+            background-color: white;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-image {
+            height: 200px;
+            background-color: #ddd;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .product-info {
+            padding: 1.5rem;
+        }
+        
+        .product-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Contact Section */
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .contact-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .contact-details {
+            margin-bottom: 2rem;
+        }
+        
+        .contact-details p {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-details i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+        
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            transition: background-color 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+        
+        .address-box {
+            background-color: var(--light-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .address-box h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .domain-footer {
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+        
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            overflow: auto;
+        }
+        
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 2rem;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 8px;
+            position: relative;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #999;
+        }
+        
+        .close-btn:hover {
+            color: var(--dark-color);
+        }
+        
+        .modal-section {
+            margin-bottom: 2rem;
+        }
+        
+        .product-modal-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .product-modal-image {
+            flex: 1;
+            min-width: 300px;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+        }
+        
+        .product-modal-details {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .success-message {
+            display: none;
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            text-align: center;
+        }
+        
+        .auth-tabs {
+            display: flex;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .auth-tab {
+            padding: 0.8rem 1.5rem;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        
+        .auth-tab.active {
+            border-bottom: 3px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        .auth-form {
+            display: none;
+        }
+        
+        .auth-form.active {
+            display: block;
+        }
+        
+        /* Loading Spinner */
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-left-color: var(--primary-color);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+                justify-content: center;
+            }
+            
+            .about-content, .contact-container {
+                flex-direction: column;
+            }
+            
+            .about-text {
+                padding-right: 0;
+                margin-bottom: 2rem;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .logo {
+                justify-content: center;
+                margin-bottom: 1rem;
+            }
+            
+            .logo img {
+                height: 50px;
+            }
+            
+            .product-modal-content {
+                flex-direction: column;
+            }
+            
+            .auth-buttons {
+                margin-top: 1rem;
+                justify-content: center;
+            }
+            
+            .gallery-categories {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://iili.io/KahV7Hb.png" alt="ABK MODERN AGRO ALLIED FARM Logo">
+                <div class="logo-text">
+                    <h1>ABK MODERN AGRO ALLIED FARM</h1>
+                    <div class="domain">abkmodernagroalliedfarm.com.ng</div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" onclick="openModal('privacyModal')">Privacy Policy</a></li>
+                    <li id="authButtons">
+                        <div class="auth-buttons">
+                            <a href="#" class="auth-btn login-btn" onclick="openAuthModal('login')">Sign In</a>
+                            <a href="#" class="auth-btn signup-btn" onclick="openAuthModal('register')">Sign Up</a>
+                        </div>
+                    </li>
+                    <li id="userMenu" style="display: none;">
+                        <div class="user-menu">
+                            <div class="user-avatar" id="userAvatar">U</div>
+                            <span id="userName">User</span>
+                            <a href="#" onclick="logout()">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Your Trusted Partner in Agricultural Solutions</h2>
+            <p>We provide high-quality agricultural tools, machinery, and allied products to boost your farming productivity and efficiency.</p>
+            <a href="#gallery" class="btn">View Our Gallery</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Nature of Business</h3>
+                    <p>ABK MODERN AGRO ALLIED FARM specializes in the sale of agricultural tools, machinery, and allied products. We are committed to providing farmers with modern, efficient, and reliable equipment to enhance agricultural productivity.</p>
+                    <p>With years of experience in the industry, we understand the unique challenges faced by farmers and offer tailored solutions to meet their specific needs.</p>
+                    <p>Visit us at <strong>abkmodernagroalliedfarm.com.ng</strong> for all your agricultural needs.</p>
+                </div>
+                <div class="about-image"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Product Gallery</h2>
+            <div class="gallery-categories">
+                <div class="gallery-category active" data-category="seeds">Seeds</div>
+                <div class="gallery-category" data-category="fertilizers">Fertilizers</div>
+                <div class="gallery-category" data-category="sprayers">Sprayers</div>
+                <div class="gallery-category" data-category="irrigation">Irrigation Systems</div>
+                <div class="gallery-category" data-category="machinery">Machinery</div>
+                <div class="gallery-category" data-category="handtools">Hand Tools</div>
+                <div class="gallery-category" data-category="livestock">Livestock</div>
+            </div>
+            
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items will be populated by JavaScript -->
+            </div>
+            
+            <div class="gallery-actions">
+                <button class="btn" id="requestQuoteBtn" onclick="openQuoteModal()" style="display: none;">Request Price Quote for Selected Items</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="products-grid">
+                <div class="product-card" onclick="openProductModal('seeds')">
+                    <div class="product-image" style="background-image: url('https://iili.io/KaM4pu1.jpg');"></div>
+                    <div class="product-info">
+                        <h3>Seeds</h3>
+                        <p>Premium quality seeds for various crops with high germination rates and disease resistance.</p>
+                    </div>
+                </div>
+                <div class="product-card" onclick="openProductModal('fertilizers')">
+                    <div class="product-image" style="background-image: url('https://iili.io/KaVF9dN.webp');"></div>
+                    <div class="product-info">
+                        <h3>Fertilizers</h3>
+                        <p>High-quality fertilizers and soil amendments to ensure healthy crop growth and maximum yield.</p>
+                    </div>
+                </div>
+                <div class="product-card" onclick="openProductModal('sprayers')">
+                    <div class="product-image" style="background-image: url('https://iili.io/KaWZtft.jpg');"></div>
+                    <div class="product-info">
+                        <h3>Sprayers</h3>
+                        <p>Efficient spraying equipment for pesticides, herbicides, and fertilizers application.</p>
+                    </div>
+                </div>
+                <div class="product-card" onclick="openProductModal('irrigation')">
+                    <div class="product-image" style="background-image: url('https://iili.io/KaXu2jf.jpg');"></div>
+                    <div class="product-info">
+                        <h3>Irrigation Systems</h3>
+                        <p>Efficient water management solutions including drip irrigation, sprinklers, and piping systems.</p>
+                    </div>
+                </div>
+                <div class="product-card" onclick="openProductModal('machinery')">
+                    <div class="product-image" style="background-image: url('https://iili.io/KaXwfbj.jpg');"></div>
+                    <div class="product-info">
+                        <h3>Farm Machinery</h3>
+                        <p>Modern tractors, harvesters, plowers, and other essential farm machinery for large-scale operations.</p>
+                    </div>
+                </div>
+                <div class="product-card" onclick="openProductModal('handtools')">
+                    <div class="product-image" style="background-image: url('https://iili.io/KaXrN9V.jpg');"></div>
+                    <div class="product-info">
+                        <h3>Hand Tools</h3>
+                        <p>High-quality hand tools including hoes, shovels, rakes, pruning shears, and other manual equipment.</p>
+                    </div>
+                </div>
+                <div class="product-card" onclick="openProductModal('livestock')">
+                    <div class="product-image" style="background-image: url('https://iili.io/KahHPBj.jpg');"></div>
+                    <div class="product-info">
+                        <h3>Livestock</h3>
+                        <p>Complete solutions for livestock management including equipment, feeds, and health management.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-details">
+                        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> ahmadbashir2999@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +2348037221632</p>
+                        <p><i class="fas fa-globe"></i> <strong>Website:</strong> abkmodernagroalliedfarm.com.ng</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/ahmadbashir2999?igsh=MXQ0eWpzYTM5dDh4cw==" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/AbdullahiI67891?s=09" target="_blank" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://tiktok.com/@ahmadbashir938" target="_blank" title="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="address-box">
+                        <h3><i class="fas fa-map-marker-alt"></i> Our Address</h3>
+                        <p>No. 22 Unguwar Fulani Medile Nearest Amira Block, Kumbotso, Kano State, Nigeria</p>
+                    </div>
+                    
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                    <p>Saturday: 9:00 AM - 4:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="messageForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                    <div class="success-message" id="messageSuccess">
+                        <i class="fas fa-check-circle"></i> Thank you for your message! We'll get back to you soon.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ABK MODERN AGRO ALLIED FARM</h3>
+                    <p>Your trusted partner for agricultural tools, machinery, and allied products.</p>
+                    <p>Visit us at: <span class="domain-footer">abkmodernagroalliedfarm.com.ng</span></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="#home" style="color: white;">Home</a></p>
+                    <p><a href="#about" style="color: white;">About Us</a></p>
+                    <p><a href="#gallery" style="color: white;">Gallery</a></p>
+                    <p><a href="#products" style="color: white;">Products</a></p>
+                    <p><a href="#contact" style="color: white;">Contact</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/ahmadbashir2999?igsh=MXQ0eWpzYTM5dDh4cw==" target="_blank" style="color: white;">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a><br>
+                        <a href="https://www.facebook.com/" target="_blank" style="color: white;">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </a><br>
+                        <a href="https://x.com/AbdullahiI67891?s=09" target="_blank" style="color: white;">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a><br>
+                        <a href="https://tiktok.com/@ahmadbashir938" target="_blank" style="color: white;">
+                            <i class="fab fa-tiktok"></i> TikTok
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ABK MODERN AGRO ALLIED FARM. All Rights Reserved. | <span class="domain-footer">abkmodernagroalliedfarm.com.ng</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('authModal')">&times;</span>
+            <h2 id="authModalTitle">Sign In to Your Account</h2>
+            
+            <div class="auth-tabs">
+                <div class="auth-tab active" id="loginTab" onclick="switchAuthTab('login')">Sign In</div>
+                <div class="auth-tab" id="registerTab" onclick="switchAuthTab('register')">Create Account</div>
+            </div>
+            
+            <form id="loginForm" class="auth-form active">
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn">Sign In</button>
+            </form>
+            
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label for="registerName">Full Name</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email Address</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPhone">Phone Number</label>
+                    <input type="tel" id="registerPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Confirm Password</label>
+                    <input type="password" id="registerConfirmPassword" required>
+                </div>
+                <button type="submit" class="btn">Create Account</button>
+            </form>
+            
+            <div class="success-message" id="authSuccess">
+                <i class="fas fa-check-circle"></i> <span id="authSuccessMessage"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('productModal')">&times;</span>
+            <div class="product-modal-content">
+                <div class="product-modal-image" id="modalProductImage"></div>
+                <div class="product-modal-details">
+                    <h2 id="modalProductTitle">Product Name</h2>
+                    <p id="modalProductDescription">Product description goes here.</p>
+                    
+                    <div id="authRequiredMessage" style="display: none; background-color: #fff8e1; padding: 1rem; border-radius: 4px; margin-bottom: 1.5rem;">
+                        <p>Please <a href="#" onclick="openAuthModal('login')">sign in</a> or <a href="#" onclick="openAuthModal('register')">create an account</a> to request a price quote.</p>
+                    </div>
+                    
+                    <form id="quoteForm" style="display: none;">
+                        <div class="form-group">
+                            <label for="productType">Product Type</label>
+                            <select id="productType" required>
+                                <option value="">Select a product type</option>
+                                <!-- Options will be populated by JavaScript -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Quantity</label>
+                            <input type="number" id="quantity" min="1" value="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="customerName">Your Name</label>
+                            <input type="text" id="customerName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="customerEmail">Your Email</label>
+                            <input type="email" id="customerEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="customerPhone">Your Phone</label>
+                            <input type="tel" id="customerPhone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="billingAddress">Billing Address</label>
+                            <textarea id="billingAddress" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="paymentMethod">Payment Method</label>
+                            <select id="paymentMethod" required>
+                                <option value="">Select payment method</option>
+                                <option value="bank-transfer">Bank Transfer</option>
+                                <option value="cash-on-delivery">Cash on Delivery</option>
+                                <option value="credit-card">Credit Card</option>
+                                <option value="debit-card">Debit Card</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn">Request Price Quote</button>
+                    </form>
+                    <div class="success-message" id="quoteSuccess">
+                        <i class="fas fa-check-circle"></i> Thank you for your inquiry! We'll contact you soon with pricing details.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quote Modal -->
+    <div id="quoteModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('quoteModal')">&times;</span>
+            <h2>Request Price Quote</h2>
+            
+            <div id="quoteAuthRequired" style="display: none; background-color: #fff8e1; padding: 1rem; border-radius: 4px; margin-bottom: 1.5rem;">
+                <p>Please <a href="#" onclick="openAuthModal('login')">sign in</a> or <a href="#" onclick="openAuthModal('register')">create an account</a> to request a price quote.</p>
+            </div>
+            
+            <div id="quoteFormContainer" style="display: none;">
+                <p>You are requesting a price quote for the following items:</p>
+                <div id="selectedItemsList" style="margin: 1rem 0; padding: 1rem; background-color: #f5f5f5; border-radius: 4px;"></div>
+                
+                <form id="galleryQuoteForm">
+                    <div class="form-group">
+                        <label for="quoteCustomerName">Your Name</label>
+                        <input type="text" id="quoteCustomerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteCustomerEmail">Your Email</label>
+                        <input type="email" id="quoteCustomerEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteCustomerPhone">Your Phone</label>
+                        <input type="tel" id="quoteCustomerPhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteBillingAddress">Billing Address</label>
+                        <textarea id="quoteBillingAddress" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="quotePaymentMethod">Payment Method</label>
+                        <select id="quotePaymentMethod" required>
+                            <option value="">Select payment method</option>
+                            <option value="bank-transfer">Bank Transfer</option>
+                            <option value="cash-on-delivery">Cash on Delivery</option>
+                            <option value="credit-card">Credit Card</option>
+                            <option value="debit-card">Debit Card</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">Request Price Quote</button>
+                </form>
+            </div>
+            
+            <div class="success-message" id="galleryQuoteSuccess">
+                <i class="fas fa-check-circle"></i> Thank you for your inquiry! We'll contact you soon with pricing details.
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('privacyModal')">&times;</span>
+            <h2>Privacy Policy</h2>
+            <div class="modal-section">
+                <h3>1. Introduction</h3>
+                <p>ABK MODERN AGRO ALLIED FARM ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.</p>
+            </div>
+            <div class="modal-section">
+                <h3>2. Information We Collect</h3>
+                <p>We may collect personal information that you voluntarily provide to us when you express an interest in obtaining information about us or our products and services, when you participate in activities on the website, or otherwise when you contact us.</p>
+                <p>The personal information we collect may include:</p>
+                <ul>
+                    <li>Name</li>
+                    <li>Email address</li>
+                    <li>Phone number</li>
+                    <li>Business address</li>
+                    <li>Any other information you choose to provide</li>
+                </ul>
+            </div>
+            <div class="modal-section">
+                <h3>3. How We Use Your Information</h3>
+                <p>We use personal information collected via our website for a variety of business purposes, including to:</p>
+                <ul>
+                    <li>Respond to your inquiries and provide customer support</li>
+                    <li>Send you marketing and promotional communications</li>
+                    <li>Improve our website and product offerings</li>
+                    <li>Comply with legal obligations</li>
+                </ul>
+            </div>
+            <div class="modal-section">
+                <h3>4. Contact Us</h3>
+                <p>If you have questions or comments about this Privacy Policy, please contact us at:</p>
+                <p>Email: ahmadbashir2999@gmail.com<br>Phone: +2348037221632<br>Website: abkmodernagroalliedfarm.com.ng</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Product data
+        const productData = {
+            'seeds': {
+                title: 'Seeds',
+                description: 'Premium quality seeds for various crops with high germination rates and disease resistance.',
+                image: 'https://iili.io/KaM4pu1.jpg',
+                types: ['wheat', 'rice', 'oats', 'barley', 'corn', 'lentils', 'chickpeas', 'dry beans', 'peas', 'cowpeas', 'soybeans', 'sunflower', 'peanut', 'flaxseed', 'sesame', 'tomato', 'pepper', 'eggplant', 'cucumber', 'lettuce', 'spinach', 'carrots', 'onion', 'clover'],
+                gallery: [
+                    'https://iili.io/KaM4pu1.jpg',
+                    'https://iili.io/KaM4taV.jpg',
+                    'https://iili.io/KaM4D8B.jpg',
+                    'https://iili.io/KaM4byP.jpg',
+                    'https://iili.io/KaM4ywF.jpg',
+                    'https://iili.io/KaM69Zg.jpg',
+                    'https://iili.io/KaM6f8N.jpg',
+                    'https://iili.io/KaM6B9I.jpg',
+                    'https://iili.io/KaM6nwX.jpg'
+                ]
+            },
+            'fertilizers': {
+                title: 'Fertilizers',
+                description: 'High-quality fertilizers and soil amendments to ensure healthy crop growth and maximum yield.',
+                image: 'https://iili.io/KaVF9dN.webp',
+                types: ['nitrogen fertilizer', 'phosphorus fertilizer', 'potassium fertilizer', 'complete fertilizer', 'organic fertilizer'],
+                gallery: [
+                    'https://iili.io/KaVF9dN.webp',
+                    'https://iili.io/KaV3pgp.jpg',
+                    'https://iili.io/KaV3bqv.jpg',
+                    'https://iili.io/KaV3m1R.jpg',
+                    'https://iili.io/KaVFH7I.jpg'
+                ]
+            },
+            'sprayers': {
+                title: 'Sprayers',
+                description: 'Efficient spraying equipment for pesticides, herbicides, and fertilizers application.',
+                image: 'https://iili.io/KaWZtft.jpg',
+                types: ['knapsack sprayer', 'hand operated compression sprayer', 'tractor mounted boom sprayer', 'tractor tailed boom sprayer', 'self propelled sprayer', 'airblast sprayer', 'mist blower sprayer', 'ultra low volume sprayer', 'drone sprayer'],
+                gallery: [
+                    'https://iili.io/KaWZtft.jpg',
+                    'https://iili.io/KaWZbgn.jpg',
+                    'https://iili.io/KaWZD0X.jpg',
+                    'https://iili.io/KaWZy5G.jpg',
+                    'https://iili.io/KaWt9ef.jpg',
+                    'https://iili.io/KaWtHb4.jpg',
+                    'https://iili.io/KaWt2X2.jpg',
+                    'https://iili.io/KaWt3sS.jpg',
+                    'https://iili.io/KaWtf19.jpg'
+                ]
+            },
+            'irrigation': {
+                title: 'Irrigation Systems',
+                description: 'Efficient water management solutions including drip irrigation, sprinklers, and piping systems.',
+                image: 'https://iili.io/KaXu2jf.jpg',
+                types: ['surface irrigation', 'furrow irrigation', 'basin irrigation', 'drip irrigation', 'sprinkler irrigation', 'center pivot irrigation', 'lateral move irrigation', 'subsurface drip irrigation', 'solar powered irrigation'],
+                gallery: [
+                    'https://iili.io/KaXu2jf.jpg',
+                    'https://iili.io/KaXuKCl.jpg',
+                    'https://iili.io/KaXudTG.jpg',
+                    'https://iili.io/KaXu3Q4.jpg',
+                    'https://iili.io/KaXuq4S.jpg',
+                    'https://iili.io/KaXuC37.jpg',
+                    'https://iili.io/KaXuna9.jpg',
+                    'https://iili.io/KaXuxyu.jpg',
+                    'https://iili.io/KaXuITb.webp',
+                    'https://iili.io/KaXuTjj.jpg'
+                ]
+            },
+            'machinery': {
+                title: 'Farm Machinery',
+                description: 'Modern tractors, harvesters, plowers, and other essential farm machinery for large-scale operations.',
+                image: 'https://iili.io/KaXwfbj.jpg',
+                types: ['tractor', 'plow', 'harrow', 'seeder', 'combine harvester', 'baler', 'loader', 'mower', 'cultivator'],
+                gallery: [
+                    'https://iili.io/KaXwfbj.jpg',
+                    'https://iili.io/KaXwCWQ.jpg',
+                    'https://iili.io/KaXwKOb.jpg',
+                    'https://iili.io/KaXwBzx.jpg',
+                    'https://iili.io/KaXwxqB.jpg',
+                    'https://iili.io/KaXwudF.jpg',
+                    'https://iili.io/KaXwA5g.jpg',
+                    'https://iili.io/KaXwRea.jpg',
+                    'https://iili.io/KaXw5mJ.jpg'
+                ]
+            },
+            'handtools': {
+                title: 'Hand Tools',
+                description: 'High-quality hand tools including hoes, shovels, rakes, pruning shears, and other manual equipment.',
+                image: 'https://iili.io/KaXrN9V.jpg',
+                types: ['shovel', 'spade', 'hoe', 'rake', 'trowel', 'pruning shears', 'wheelbarrow', 'pitchfork', 'sickle', 'pickaxe'],
+                gallery: [
+                    'https://iili.io/KaXrN9V.jpg',
+                    'https://iili.io/KaXrewP.jpg',
+                    'https://iili.io/KaXrhcx.jpg',
+                    'https://iili.io/KaXrXFj.jpg',
+                    'https://iili.io/KaXrUPa.jpg',
+                    'https://iili.io/KaXrSMg.jpg',
+                    'https://iili.io/KaXr4cv.png',
+                    'https://iili.io/KaXri9p.jpg'
+                ]
+            },
+            'livestock': {
+                title: 'Livestock',
+                description: 'Products and equipment for efficient livestock management and animal health.',
+                image: 'https://iili.io/KahHPBj.jpg',
+                types: ['animal feed', 'vaccines', 'medicines', 'supplements', 'feeding systems', 'housing equipment', 'milking machines', 'incubators'],
+                gallery: [
+                    'https://iili.io/KahHPBj.jpg',
+                    'https://iili.io/KahH4Lb.jpg',
+                    'https://iili.io/KahHsrQ.jpg',
+                    'https://iili.io/KahHrhu.jpg',
+                    'https://iili.io/KahHtkP.jpg',
+                    'https://iili.io/KahHDp1.jpg',
+                    'https://iili.io/KahHmTF.jpg',
+                    'https://iili.io/KahHphg.jpg',
+                    'https://iili.io/KahJBTX.jpg',
+                    'https://iili.io/KahJCjn.jpg',
+                    'https://iili.io/KahJnQs.jpg',
+                    'https://iili.io/KahJxCG.jpg',
+                    'https://iili.io/KahJAa2.jpg',
+                    'https://iili.io/KahJ5y7.jpg',
+                    'https://iili.io/KahJaje.jpg',
+                    'https://iili.io/KahJcZu.jpg',
+                    'https://iili.io/KahJ0Cb.jpg'
+                ]
+            }
+        };
+
+        // Gallery state
+        let currentGalleryCategory = 'seeds';
+        let selectedGalleryItems = [];
+
+        // User authentication state
+        let currentUser = null;
+
+        // Check if user is logged in on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedUser = localStorage.getItem('currentUser');
+            if (savedUser) {
+                currentUser = JSON.parse(savedUser);
+                updateAuthUI();
+            }
+            
+            // Initialize gallery
+            loadGallery('seeds');
+            
+            // Add event listeners to gallery categories
+            document.querySelectorAll('.gallery-category').forEach(category => {
+                category.addEventListener('click', function() {
+                    const categoryName = this.getAttribute('data-category');
+                    loadGallery(categoryName);
+                    
+                    // Update active category
+                    document.querySelectorAll('.gallery-category').forEach(cat => {
+                        cat.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                });
+            });
+        });
+
+        // Load gallery for a specific category
+        function loadGallery(category) {
+            currentGalleryCategory = category;
+            selectedGalleryItems = [];
+            document.getElementById('requestQuoteBtn').style.display = 'none';
+            
+            const galleryGrid = document.getElementById('galleryGrid');
+            galleryGrid.innerHTML = '';
+            
+            if (productData[category] && productData[category].gallery) {
+                productData[category].gallery.forEach((imageUrl, index) => {
+                    const galleryItem = document.createElement('div');
+                    galleryItem.className = 'gallery-item';
+                    galleryItem.innerHTML = `<img src="${imageUrl}" alt="${category} image ${index + 1}" loading="lazy">`;
+                    
+                    galleryItem.addEventListener('click', function() {
+                        toggleGalleryItemSelection(this, imageUrl);
+                    });
+                    
+                    galleryGrid.appendChild(galleryItem);
+                });
+            }
+        }
+
+        // Toggle selection of gallery item
+        function toggleGalleryItemSelection(item, imageUrl) {
+            if (item.classList.contains('selected')) {
+                item.classList.remove('selected');
+                selectedGalleryItems = selectedGalleryItems.filter(url => url !== imageUrl);
+            } else {
+                item.classList.add('selected');
+                selectedGalleryItems.push(imageUrl);
+            }
+            
+            // Show/hide request quote button
+            if (selectedGalleryItems.length > 0) {
+                document.getElementById('requestQuoteBtn').style.display = 'block';
+            } else {
+                document.getElementById('requestQuoteBtn').style.display = 'none';
+            }
+        }
+
+        // Open quote modal for gallery items
+        function openQuoteModal() {
+            if (selectedGalleryItems.length === 0) return;
+            
+            if (!currentUser) {
+                document.getElementById('quoteAuthRequired').style.display = 'block';
+                document.getElementById('quoteFormContainer').style.display = 'none';
+            } else {
+                document.getElementById('quoteAuthRequired').style.display = 'none';
+                document.getElementById('quoteFormContainer').style.display = 'block';
+                
+                // Pre-fill user data
+                document.getElementById('quoteCustomerName').value = currentUser.name;
+                document.getElementById('quoteCustomerEmail').value = currentUser.email;
+                document.getElementById('quoteCustomerPhone').value = currentUser.phone;
+                
+                // Update selected items list
+                const selectedItemsList = document.getElementById('selectedItemsList');
+                selectedItemsList.innerHTML = '';
+                selectedGalleryItems.forEach((url, index) => {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.style.display = 'flex';
+                    itemDiv.style.alignItems = 'center';
+                    itemDiv.style.marginBottom = '0.5rem';
+                    itemDiv.innerHTML = `
+                        <img src="${url}" style="width: 50px; height: 50px; object-fit: cover; margin-right: 10px; border-radius: 4px;" loading="lazy">
+                        <span>${productData[currentGalleryCategory].title} - Item ${index + 1}</span>
+                    `;
+                    selectedItemsList.appendChild(itemDiv);
+                });
+            }
+            
+            document.getElementById('galleryQuoteSuccess').style.display = 'none';
+            openModal('quoteModal');
+        }
+
+        // Modal functionality
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+        }
+        
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            // Reset forms when closing modal
+            document.getElementById('quoteSuccess').style.display = 'none';
+            document.getElementById('authSuccess').style.display = 'none';
+            document.getElementById('galleryQuoteSuccess').style.display = 'none';
+        }
+        
+        // Open product modal with specific product data
+        function openProductModal(productId) {
+            const product = productData[productId];
+            if (product) {
+                document.getElementById('modalProductTitle').textContent = product.title;
+                document.getElementById('modalProductDescription').textContent = product.description;
+                document.getElementById('modalProductImage').style.backgroundImage = `url('${product.image}')`;
+                
+                // Populate product types
+                const productTypeSelect = document.getElementById('productType');
+                productTypeSelect.innerHTML = '<option value="">Select a product type</option>';
+                product.types.forEach(type => {
+                    const option = document.createElement('option');
+                    option.value = type;
+                    option.textContent = type.charAt(0).toUpperCase() + type.slice(1);
+                    productTypeSelect.appendChild(option);
+                });
+                
+                // Show/hide forms based on authentication status
+                if (currentUser) {
+                    document.getElementById('authRequiredMessage').style.display = 'none';
+                    document.getElementById('quoteForm').style.display = 'block';
+                    // Pre-fill user data
+                    document.getElementById('customerName').value = currentUser.name;
+                    document.getElementById('customerEmail').value = currentUser.email;
+                    document.getElementById('customerPhone').value = currentUser.phone;
+                } else {
+                    document.getElementById('authRequiredMessage').style.display = 'block';
+                    document.getElementById('quoteForm').style.display = 'none';
+                }
+                
+                openModal('productModal');
+            }
+        }
+        
+        // Open auth modal with specific tab
+        function openAuthModal(tab) {
+            switchAuthTab(tab);
+            openModal('authModal');
+        }
+        
+        // Switch between login and register tabs
+        function switchAuthTab(tab) {
+            if (tab === 'login') {
+                document.getElementById('loginTab').classList.add('active');
+                document.getElementById('registerTab').classList.remove('active');
+                document.getElementById('loginForm').classList.add('active');
+                document.getElementById('registerForm').classList.remove('active');
+                document.getElementById('authModalTitle').textContent = 'Sign In to Your Account';
+            } else {
+                document.getElementById('loginTab').classList.remove('active');
+                document.getElementById('registerTab').classList.add('active');
+                document.getElementById('loginForm').classList.remove('active');
+                document.getElementById('registerForm').classList.add('active');
+                document.getElementById('authModalTitle').textContent = 'Create an Account';
+            }
+            document.getElementById('authSuccess').style.display = 'none';
+        }
+        
+        // Update UI based on authentication status
+        function updateAuthUI() {
+            if (currentUser) {
+                document.getElementById('authButtons').style.display = 'none';
+                document.getElementById('userMenu').style.display = 'flex';
+                document.getElementById('userName').textContent = currentUser.name;
+                document.getElementById('userAvatar').textContent = currentUser.name.charAt(0).toUpperCase();
+            } else {
+                document.getElementById('authButtons').style.display = 'block';
+                document.getElementById('userMenu').style.display = 'none';
+            }
+        }
+        
+        // Logout function
+        function logout() {
+            currentUser = null;
+            localStorage.removeItem('currentUser');
+            updateAuthUI();
+        }
+        
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                const modals = document.getElementsByClassName('modal');
+                for (let i = 0; i < modals.length; i++) {
+                    modals[i].style.display = 'none';
+                }
+            }
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Handle login form submission
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+            
+            // In a real application, you would verify credentials with a server
+            // For this example, we'll check if the user exists in localStorage
+            const users = JSON.parse(localStorage.getItem('users') || '[]');
+            const user = users.find(u => u.email === email && u.password === password);
+            
+            if (user) {
+                currentUser = user;
+                localStorage.setItem('currentUser', JSON.stringify(currentUser));
+                updateAuthUI();
+                
+                // Show success message
+                document.getElementById('authSuccessMessage').textContent = 'Login successful!';
+                document.getElementById('authSuccess').style.display = 'block';
+                
+                // Close modal after a delay
+                setTimeout(() => {
+                    closeModal('authModal');
+                    // If product modal is open, refresh it to show the quote form
+                    if (document.getElementById('productModal').style.display === 'block') {
+                        const productId = document.getElementById('modalProductTitle').textContent.toLowerCase().replace(' ', '-');
+                        openProductModal(productId);
+                    }
+                    // If quote modal is open, refresh it
+                    if (document.getElementById('quoteModal').style.display === 'block') {
+                        openQuoteModal();
+                    }
+                }, 1500);
+            } else {
+                alert('Invalid email or password. Please try again.');
+            }
+        });
+        
+        // Handle register form submission
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('registerName').value;
+            const email = document.getElementById('registerEmail').value;
+            const phone = document.getElementById('registerPhone').value;
+            const password = document.getElementById('registerPassword').value;
+            const confirmPassword = document.getElementById('registerConfirmPassword').value;
+            
+            if (password !== confirmPassword) {
+                alert('Passwords do not match. Please try again.');
+                return;
+            }
+            
+            // In a real application, you would send this data to your server
+            // For this example, we'll store the user in localStorage
+            const users = JSON.parse(localStorage.getItem('users') || '[]');
+            
+            // Check if user already exists
+            if (users.some(user => user.email === email)) {
+                alert('An account with this email already exists. Please sign in instead.');
+                return;
+            }
+            
+            // Create new user
+            const newUser = { name, email, phone, password };
+            users.push(newUser);
+            localStorage.setItem('users', JSON.stringify(users));
+            
+            // Automatically log the user in
+            currentUser = newUser;
+            localStorage.setItem('currentUser', JSON.stringify(currentUser));
+            updateAuthUI();
+            
+            // Show success message
+            document.getElementById('authSuccessMessage').textContent = 'Account created successfully!';
+            document.getElementById('authSuccess').style.display = 'block';
+            
+            // Close modal after a delay
+            setTimeout(() => {
+                closeModal('authModal');
+                // If product modal is open, refresh it to show the quote form
+                if (document.getElementById('productModal').style.display === 'block') {
+                    const productId = document.getElementById('modalProductTitle').textContent.toLowerCase().replace(' ', '-');
+                    openProductModal(productId);
+                }
+                // If quote modal is open, refresh it
+                if (document.getElementById('quoteModal').style.display === 'block') {
+                    openQuoteModal();
+                }
+            }, 1500);
+        });
+        
+        // Handle quote form submission
+        document.getElementById('quoteForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // In a real application, you would send this data to your server
+            // For this example, we'll just show a success message
+            document.getElementById('quoteSuccess').style.display = 'block';
+            setTimeout(() => {
+                closeModal('productModal');
+            }, 3000);
+        });
+        
+        // Handle gallery quote form submission
+        document.getElementById('galleryQuoteForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // In a real application, you would send this data to your server
+            // For this example, we'll just show a success message
+            document.getElementById('galleryQuoteSuccess').style.display = 'block';
+            setTimeout(() => {
+                closeModal('quoteModal');
+                // Clear selected items
+                selectedGalleryItems = [];
+                document.querySelectorAll('.gallery-item.selected').forEach(item => {
+                    item.classList.remove('selected');
+                });
+                document.getElementById('requestQuoteBtn').style.display = 'none';
+            }, 3000);
+        });
+        
+        // Handle contact form submission
+        document.getElementById('messageForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // In a real application, you would send this data to your server
+            // For this example, we'll just show a success message
+            document.getElementById('messageSuccess').style.display = 'block';
+            document.getElementById('messageForm').reset();
+            setTimeout(() => {
+                document.getElementById('messageSuccess').style.display = 'none';
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
